@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    var firstInputmilskel
+    var secondInputwell 
+    var result
+        function firstInputHandler(event) {
+            console.log(firstInputmilskel)
+        }
+
+        function secondInputHandler(event) {
+            console.log(secondInputwell)
+        }
+
+        function Calculateresult() {
+            result=firstInputmilskel+secondInputwell
+            console.log(result)
+        }
+        
+    </script>
+
+
+    <input type="text" oninput="firstInputHandler(event)">
+    <p>+</p>
+    <input type="text" oninput="secondInputHandler(event)">
+    <button onclick="Calculateresult()">Calculate</button>
+</body>
+</html>
